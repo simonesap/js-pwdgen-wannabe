@@ -1,12 +1,25 @@
-let nomeUtente = prompt("Hello, please enter your name ?");
+/*  
+    1) Chiedi all'utente il suo nome,
+    2) poi chiedi il suo cognome,
+    3) poi chiedi il suo colore preferito,
+    4) infine scrivi sulla pagina nomecognomecolorepreferito21
+*/
 
-let cognomeUtente = prompt("Please enter your surname?");
+const nomeUtente = prompt("Hello, please enter your name ?");
+console.log(nomeUtente);
 
-let colorePreferito = prompt("Please enter your favourite color ?");
+const cognomeUtente = prompt("Please enter your surname?");
+console.log(cognomeUtente);
 
-let etàUtente = prompt("Please enter your age ?");
+const colorePreferito = prompt("Please enter your favourite color ?");
+console.log(colorePreferito);
 
-document.getElementById("password_generator").innerHTML = "Your password is: " + nomeUtente + cognomeUtente + colorePreferito + etàUtente;
+const etàUtente = prompt("Please enter your age ?");
+console.log(etàUtente);
+
+let passwordUtente =`${nomeUtente}${cognomeUtente}${colorePreferito}${etàUtente}`;
+
+document.getElementById("password_generator").innerHTML = "Your password is: " + passwordUtente;
 
 
 
